@@ -1,0 +1,125 @@
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.d-block {
+    display: block;
+}
+.d-none {
+    display: none;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.r-light {
+    font-weight: 300;
+}
+.own-container {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.own-container--md {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.oswald {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+.relative {
+    position: relative;
+}
+.flexbox {
+    @include flexbox();
+}
+.justify-center {
+    @include justify-content(center);
+}
+.justify-between {
+    @include justify-content(space-between);
+}
+.align-center {
+    @include align-items(center);
+}
+.color-blue {
+    color: #018ae0;
+}
+.color-black {
+    color: #000;
+}
+.bg-dark-blue {
+    background: #3e7b97;
+}
+.bg-dark-sky {
+    background: #45aeae;
+}
+.bg-dark-pink {
+    background: #e23a59;
+}
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.btn-blue {
+    display: inline-block;
+    text-decoration: none;
+    background: #0c213f;
+    color: #FFF;
+    font-size: 1.125em;
+    padding: 6px 23px 8px;
+    position: relative;
+    z-index: 2;
+}
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+.btn-cross {
+    background: transparentize(black, 0.6);
+    color: #FFF;
+    text-decoration: none;
+    padding: 0;
+    border: 0;
+    font-size: 2em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+.btn-submit {
+    background: #018ae0;
+    color: #FFF;
+    font-size: 1.25em;
+    height: 40px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    border: none;
+}
+.color-yellow {
+    color: $yellow;
+}
+.color-blue2 {
+    color: $blue2;
+}
+.color-black {
+    color: #000;
+}
+.color-white {
+    color: white;
+}
