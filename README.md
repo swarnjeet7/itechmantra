@@ -1,2 +1,3 @@
 # itechmantra
-Software Development Company
+Blogging website with open source code.
+
