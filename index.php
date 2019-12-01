@@ -22,7 +22,7 @@
         define('APP', SITE_PATH.'/app');
     }
     if(!defined('CSS')) {
-        define('CSS', APP.'/assets/css');
+        define('CSS', '/app/assets/css');
     }
     if(!defined('JS')) {
         define('JS', '/app/assets/js');
