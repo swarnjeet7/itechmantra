@@ -1,6 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import PDF from "../icons/file-pdf-box.svg";
+import GitHub from "../icons/github.svg";
+import LinkedIn from "../icons/linkedin.svg";
+import Twitter from "../icons/twitter.svg";
+import Youtube from "../icons/youtube.svg";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -11,61 +16,232 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <main>
+        {/* intro and image */}
+        <section className={`${styles.sectionPage} ${styles.heroWrapper}`}>
+          <img
+            className={styles.profileImage}
+            src="./images/profile_pic.jpeg"
+          />
+          <div>
+            <h1 className={styles.userName}>Swarnjeet Singh</h1>
+            <p className={styles.fontWeightLight}>
+              I am a Web Develper more into Frontend, Consultant - Frontend
+              at&nbsp;
+              <a
+                href="https://empenofore.in/"
+                target="_blank"
+                className={styles.linkStyle}
+              >
+                Empenofore Technologies
+              </a>
+              . I also write technical blogs,{" "}
+              <a
+                href="https://blog.itechmantra.com"
+                target="_blank"
+                className={styles.linkStyle}
+              >
+                please check here
+              </a>
             </p>
-          </a>
-        </div>
-      </main>
+            <p className={styles.email}>👉 swarnjeet7@gmail.com</p>
+          </div>
+        </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        {/* social links */}
+        <section className={styles.sectionPage}>
+          <div className={styles.socialsList}>
+            <a
+              href="https://www.youtube.com/user/swarnjeet07/featured"
+              target="_blank"
+              className={styles.socialsLink}
+            >
+              <Youtube />
+              Youtube
+            </a>
+            <a
+              href="https://twitter.com/swarnjeet71"
+              target="_blank"
+              className={styles.socialsLink}
+            >
+              <Twitter />
+              Twitter
+            </a>
+            <a
+              href="https://www.linkedin.com/in/swarnjeet7"
+              target="_blank"
+              className={styles.socialsLink}
+            >
+              <LinkedIn />
+              Linkedin
+            </a>
+            <a
+              href="https://github.com/swarnjeet7"
+              target="_blank"
+              className={styles.socialsLink}
+            >
+              <GitHub />
+              Github
+            </a>
+            <a
+              href="./swarnjeet_resume.pdf"
+              target="_blank"
+              className={styles.socialsLink}
+            >
+              <PDF />
+              Download Resume
+            </a>
+          </div>
+        </section>
+
+        {/* skills and qualification */}
+        <section className={styles.sectionPage}>
+          <h2>Skills & Qualifications</h2>
+          <ul className={styles.qualificationsList}>
+            <li>✔️ 7+ Years experience with frontend development</li>
+            <li>
+              ✔️ Extensive knowledge in API integrations and Web Development
+            </li>
+            <li>
+              ✔️ A rich experience in HTML, CSS, SASS, JavaScript, React, Redux,
+              Redux-saga, Jest, Cypress, and Angular
+            </li>
+          </ul>
+        </section>
+
+        {/* tools and tech stack */}
+        <section className={styles.sectionPage}>
+          <h2>Tools & Tech stack</h2>
+
+          <div className={styles.techStackWrapper}>
+            <div className={styles.techStackItem}>
+              <span>Typescript, JavaScript, NodeJS</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>Lodash, jQuery, Express</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>MongoDB, MySQL</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>React, Next JS, Redux, Redux-Saga</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>Webpack, Gulp</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>Git, GitHub</span>
+            </div>
+            <div className={styles.techStackItem}>
+              <span>Jira, Mantis</span>
+            </div>
+          </div>
+        </section>
+
+        {/* work history */}
+        <section className={styles.sectionPage}>
+          <h2>Work History</h2>
+          <div className={styles.lineBreak}></div>
+
+          {/* current company - empenofore */}
+          <div className={styles.workHistory}>
+            <strong className={styles.textWhite}>
+              🚧 Consultant - Frontend Developer | Empenofore Technologies
+            </strong>
+            <p>August' 2021 - Present</p>
+            <p>
+              Worked on making web based reusable React UI components for across
+              3 applications. Leading a team for adopting a best practices and
+              making application more scalable and performent.
+            </p>
+            <ul className={styles.workItems}>
+              <li>
+                Reduced a dependancy from backend developer to generate the
+                manual report. It also save the 50% cost.
+              </li>
+              <li>
+                Client also can download the report anytime with in a seconds
+                and the report is also custmizable.
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.lineBreak}></div>
+
+          {/* 2nd company - Wingify */}
+          <div className={styles.workHistory}>
+            <strong className={styles.textWhite}>
+              🚧 Senior Software Engineer | Wingify
+            </strong>
+            <p>November' 2020 - July' 2021</p>
+            <p>
+              Create AB test for improving conversion rate optimization using
+              VWO (Visual Website Optimiser). Create good user experience
+              feature as per the optimization consultant suggestion.
+            </p>
+            <ul className={styles.workItems}>
+              <li>Increase atleast 8% to 30% conversion of the page</li>
+              <li>
+                Improve user experience so website trafic increase by upto 10%
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.lineBreak}></div>
+
+          {/* 1st company - Meritnation */}
+          <div className={styles.workHistory}>
+            <strong className={styles.textWhite}>
+              🚧 UI Develper | Meritnation (Aakash Edutech)
+            </strong>
+            <p>August' 2015 - October' 2020</p>
+            <p>
+              Create new feature and maintain old website meritnation.com and
+              aakashdigital.com. I also take care of website performance and
+              scalibility using tools like chrome light house and performance
+              timeline.
+            </p>
+            <ul className={styles.workItems}>
+              <li>
+                Develop user-friendly new features using HTML, CSS, JavaScript,
+                SCSS, jQuery, Angular, and React
+              </li>
+              <li>
+                Create custom library using HTML, CSS, JavaScript for future use
+                and best performance and compatible with any JavaScript
+                framework
+              </li>
+              <li>
+                Take care of cross browser compatibility issues while creating a
+                new feature or library for future use.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* projects and accomplishments */}
+        <section className={styles.sectionPage}>
+          <h2>Projects & Accomplishments</h2>
+
+          <div className={styles.projectItem}>
+            <a href="/project-saxo">
+              <span>🏆 </span>Saxo Trader Go - Online trading web app
+            </a>
+          </div>
+
+          <div className={styles.projectItem}>
+            <a href="/project-aakash">
+              <span>🏆 </span>Aakash Digital - No 1 Web App in Medical Enterance
+            </a>
+          </div>
+
+          <div className={styles.projectItem}>
+            <a href="project-meritnation">
+              <span>🏆 </span>Meritnation - Education Web App
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
-  )
+  );
 }

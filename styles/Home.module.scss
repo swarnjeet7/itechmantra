@@ -1,0 +1,135 @@
+.textWhite {
+  color: white;
+}
+.textStyle {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: var(--mainLinkColor);
+  font-weight: 500;
+}
+
+.listItem {
+  line-height: 1.9em;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.sectionPage {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.heroWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.fontWeightLight {
+  font-weight: 300;
+}
+
+.userName {
+  font-size: 48px;
+  line-height: 1em;
+}
+
+.email {
+  color: var(--mainTextColor);
+}
+
+.socialsList {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+.socialsLink {
+  font-weight: 300;
+  color: var(--secondaryTextColor);
+  font-size: 0.9em;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--mainLinkColor);
+  }
+
+  svg {
+    margin-right: 5px;
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.qualificationsList {
+  list-style: none;
+  line-height: 2;
+  color: var(--secondaryTextColor);
+}
+
+.techStackWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.techStackItem {
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+  color: var(--secondaryTextColor);
+}
+
+.lineBreak {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+.workHistory {
+  border-left: 1px solid var(--mainBorderColor);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
+  color: var(--secondaryTextColor);
+}
+
+.workItems {
+  li {
+    line-height: 2;
+  }
+}
+
+.projectItem {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
+  font-weight: 300;
+  color: var(--mainTextColor);
+  transition: 0.3s;
+
+  &:hover {
+    color: rgb(30, 190, 214);
+  }
+}
